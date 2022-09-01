@@ -1,61 +1,11 @@
-SUPPLYING COFFEE PROCESS
-Goritma coffee memiliki supplier biji kopi roastery sendiri yaitu Javanica Coffee and Roastery yang berlokasi di Jalan BKR kota Bandung. Dikarenakan kuota Goritma Coffee yang terbilang masih kecil dan masih berada di awal karir yaitu buka pada tanggal 8 Januari 2020 maka sistem pengadaan bahan baku masih langsung dilakukan oleh pegawai Goritma coffee yang akan mengontak supplier dan mereka sendiri yang mengambil biji kopi ke supplier tersebut. Tetapi apabila Javanica coffee and Roastery tidak dapat memenuhi pesanan bahan baku pada saat dibutuhkan maka Goritma Coffee akan mengambil alternative lain dengan mencari bahan baku kepada supplier lain tetapi hanya untuk sementara waktu karena adanya perbedaan kualitas biji kopi roastery dari supplier lain dengan Javanica walaupun hanya ada sedikit perbedaan.
+Defining Business Process
 
-ORDERING COFFEE PROCESS
-Cara pemesanan order di Goritma Coffee yaitu pelanggan langsung menuju kasir kemudian memilih pesanan yang diinginkan kemudian kasir akan menginput pesanan menggunakan aplikasi yang bernama ‘kasir’ dan aplikasi secara otomatis menyimpan data-data pesanan pelanggan. Setelah pesanan selesai terinput, kasir akan memproses pembayaran kemudian setelah pelanggan selesai membayar, orderan akan diproses. Saat pesanan diproses, pelanggan dipersilahkan duduk dan menunggu pesanan. Kemudian setelah pesanan selesai, pesanan akan diantar langsung oleh pegawai ke tempat duduk pelanggan.
-Rekap pembayaran di Goritma Coffee sudah secara otomatis dilakukan oleh aplikasi ‘kasir’ ini. Data rekap berupa pengeluaran, apa yang telah terjual, dan produk apa yang paling sering dipesan oleh pelanggan pada bulan itu. 
+1. SUPPLYING COFFEE PROCESS
 
-BUSINESS RULES
-ENTITAS:
-1	Pelanggan
-2	Menu 
-3	Produk_Kopi
-4	Warehouse
-5	Supplier
-6	Pegawai
-7	Humas
-8	Kasir
+Goritma coffee has its own supplier of roasted coffee beans, namely Javanica Coffee and Roastery, which is located on Jalan BKR, Bandung. Due to Goritma Coffee's quota which is still relatively small and is still at the beginning of its career, which is open on January 8, 2020, the raw material procurement system is still directly carried out by Goritma coffee employees who will contact the supplier and they themselves take the coffee beans to the supplier. But if Javanica coffee and Roastery cannot fulfill the order for raw materials when needed, Goritma Coffee will take another alternative by looking for raw materials from other suppliers but only temporarily due to differences in the quality of roastery coffee beans from other suppliers with Javanica even though there are only a few difference.
 
-3.2 ATRIBUT
-Pelanggan: 
-•	Id_pelanggan		VARCHAR		(50)	NOT NULL	PK
-•	Nama			      VARCHAR		(50)	NOT NULL
-•	No_HP			      INT			  (12)	NULL
+2. ORDERING COFFEE PROCESS
+ 
+The way to order orders at Goritma Coffee is that the customer goes directly to the cashier then selects the desired order then the cashier will input the order using an application called 'cashier' and the application automatically stores customer order data. After the order has been inputted, the cashier will process the payment then after the customer has finished paying, the order will be processed. When the order is processed, the customer is invited to sit and wait for the order. Then after the order is completed, the order will be delivered directly by the employee to the customer's seat. 
 
-Pegawai :
-•	Id_Pegawai		VARCHAR		(50)	NOT NULL	PK
-•	Nama			    VARCHAR		(50)	NOT NULL
-•	Gender		  	ENUM			(2)	NOT NULL
-•	No_Telp	    	VARCHAR		(12)	NOT NULL
-
-Supplier:
-•	Id_supplier		  VARCHAR		(50)	NOT NULL	PK
-•	Nama Supplier	  VARCHAR		(50)	NOT NULL
-•	Id_Produk_Kopi	VARCHAR		(50)	NOT NULL	
-•	Jumlah			    INT			(3)	NOT NULL	
-
-Produk_Kopi:
-•	Id_Produk_Kopi		VARCHAR	(50)	NOT NULL	PK
-•	Nama_Produk_Kopi	VARCHAR	(50)	NOT NULL
-
-Warehouse
-•	Id_Warehouse		  VARCHAR		(50)	NOT NULL	PK
-•	Id_Produk_Kopi	  VARCHAR		(50)	NOT NULL	FK
-•	Nama_Produk_Kopi	VARCHAR		(50)	NOT NULL
-•	Jumlah			      INT			(10)	NOT NULL
-
-Menu
-•	Id_Menu		        VARCHAR	(50)	NOT NULL	PK
-•	Nama_Produk_Kopi	VARCHAR	(50)	NOT NULL	
-•	Harga			        VARCHAR	(50)	NOT NULL	
-
-Humas:
-•	NIP_Humas		VARCHAR	(50)	NOT NULL	PK
-•	Nama			  VARCHAR	(50)	NOT NULL
-
-Kasir:
-•	NIP_Kasir		VARCHAR	(50)	NOT NULL	PK
-•	Nama			  VARCHAR	(50)	NOT NULL
-
-
-
+The recap of payments at Goritma Coffee has been automatically carried out by this 'cashier' application. Recap data in the form of expenses, what has been sold, and what products were ordered by customers the most in that month.
