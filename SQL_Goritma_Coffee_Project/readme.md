@@ -13,16 +13,14 @@ A. Business Processes
 
 B. Business Rules
 
-1. Entities : Customer, Cashier, Barista, Supplier
-
-2. Atribute :
+1. Entities and Atributes :
 
 ![image](https://user-images.githubusercontent.com/74693024/188259821-cde54fa7-f95c-4e62-800e-5026729308fa.png)
 
-C. Database Scheme
+2. Database Scheme
 
 ![image](https://user-images.githubusercontent.com/74693024/188259850-24a510b4-4741-46bd-821e-3e20a2295fdc.png)
 
-D. ERD
+3. ERD
 
 ![image](https://user-images.githubusercontent.com/74693024/188259869-33927504-5219-4424-9f28-9c5fe063a84b.png)
